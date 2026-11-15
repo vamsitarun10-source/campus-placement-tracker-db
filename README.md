@@ -2,6 +2,10 @@
 
 A relational database system built using **MySQL 8.x** to manage campus recruitment, including student applications, job postings, interview rounds, offers, and application status tracking.
 
+## Entity-Relationship Diagram
+
+![Campus Placement Tracker ER Diagram](docs/er_diagram.png)
+
 ## Features
 
 - **7 Normalized Tables:** Students, Companies, Jobs, Applications, Interviews, Offers, and Application Audit.
@@ -25,20 +29,6 @@ Campus-Placement-Tracker/
 ├── 02_seed_data.sql
 ├── 03_views_and_triggers.sql
 ├── 04_analytical_queries.sql
+├── docs/
+│   └── er_diagram.png
 └── README.md
-```
-
-## How to Run
-
-Execute the SQL scripts in the following order:
-
-```bash
-mysql -u root -p < 01_schema.sql
-mysql -u root -p < 02_seed_data.sql
-mysql -u root -p < 03_views_and_triggers.sql
-mysql -u root -p < 04_analytical_queries.sql
-```
-
-## Key Concepts Demonstrated
-
-Database Normalization, Relationships, Constraints, Joins, Triggers, Views, Transactions, Subqueries, CTEs, Window Functions, and Indexing.
